@@ -21,6 +21,16 @@ public class Main {
         entrada=entrada.toLowerCase();
         char[] salida=entrada.toCharArray();
         return salida;
+    }
 
+    public static char[] contarEspacios(char[] entrada){
+        int espacios=0;
+        for (char letra:entrada){
+            if (letra == 32){
+                espacios++;
+            }
+
+        }
+        return salida;
     }
 }
