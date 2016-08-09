@@ -25,6 +25,8 @@ public class Main {
         return salida;
     }
 
+
+    /*
     public static int contarEspacios(char[] entrada){
         int espacios=0;
         for (char letra:entrada){
@@ -42,6 +44,17 @@ public class Main {
 
         for(int i=0;i<entrada.length-contarEspacios(entrada);i++);
 
+    }*/
+
+    public static int contarInstancias(char[] entrada){
+        int instancias=0;
+        for (char letra:entrada){
+            if (letra != 32){
+                instancias++;
+            }
+
+        }
+        return instancias;
     }
 
 }
