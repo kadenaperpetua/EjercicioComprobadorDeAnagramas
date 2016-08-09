@@ -10,7 +10,11 @@ public class Main {
         //System.out.println("a = " + a);
 
         char[] comprobador= normalizar(textoDeOrigen);
-        System.out.println("comprobador = " + comprobador);
+
+        for(int i=0;i<comprobador.length;i++) {
+            System.out.print(comprobador[i]);
+        }
+
     }
 
     public static char[] normalizar(String entrada){
