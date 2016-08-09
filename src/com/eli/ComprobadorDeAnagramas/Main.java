@@ -3,20 +3,28 @@ package com.eli.ComprobadorDeAnagramas;
 public class Main {
 
     public static void main(String[] args) {
-	    String entrada1 = "PROTESTA";
-        String entrada2 ="portaste";
+
+        String entrada1 = "PROTESTA";
+        String entrada2 = "portaste";
         comprobarAnagrama(entrada1,entrada2);
 
-/*
-        String entrada3 = "Tom Marvolo Riddle";
-        String entrada4 ="I am Lord Voldemort";
-        comprobarAnagrama(entrada3,entrada4);
 
-        String entrada5 = "abef";
-        String entrada6 ="acdf";
-        comprobarAnagrama(entrada3,entrada4);
+        entrada1 = "Tom Marvolo Riddle";
+        entrada2 = "I am Lord Voldemort";
+        comprobarAnagrama(entrada1,entrada2);
 
-*/
+
+        entrada1 = "abef";
+        entrada2= "acdf";
+        comprobarAnagrama(entrada1,entrada2);
+
+        entrada1 = "aabcd";
+        entrada2= "abbcd";
+        comprobarAnagrama(entrada1,entrada2);
+
+
+
+
 
         }
 
@@ -83,14 +91,14 @@ public class Main {
             }
         }
 
-
+        /*
         System.out.println("sumatoria1 = " + sumatoria1);
         System.out.println("sumatoria2 = " + sumatoria2);
         System.out.println("contador1 = " + contador1);
         System.out.println("contador2 = " + contador2);
         System.out.println("comprobador = " + comprobador);
 
-
+        */
 
 
 
