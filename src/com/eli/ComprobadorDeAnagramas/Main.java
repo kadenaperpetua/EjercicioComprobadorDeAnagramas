@@ -3,17 +3,23 @@ package com.eli.ComprobadorDeAnagramas;
 public class Main {
 
     public static void main(String[] args) {
-	    String entrada1 = "PRO TESTA";
+	    String entrada1 = "PROTESTA";
         String entrada2 ="portaste";
-        
+        comprobarAnagrama(entrada1,entrada2);
+
+
+        String entrada3 = "Tom Marvolo Riddle";
+        String entrada4 ="I am Lord Voldemort";
+        comprobarAnagrama(entrada3,entrada4);
+
         //int a= ' ';
         //System.out.println("a = " + a);
-
-        char[] comprobador= normalizar(entrada1);
-
+        //char[] comprobador= normalizar(entrada1);
+        /*
         for(int i=0;i<comprobador.length;i++) {
             System.out.print(comprobador[i]);
         }
+        */
 
 
 
