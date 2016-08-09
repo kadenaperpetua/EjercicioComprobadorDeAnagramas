@@ -15,15 +15,17 @@ public class Main {
             System.out.print(comprobador[i]);
         }
 
+
+
     }
 
     public static char[] normalizar(String entrada){
         entrada=entrada.toLowerCase();
-        char[] salida=entrada.toCharArray();
+        char[] salida = entrada.toCharArray();
         return salida;
     }
 
-    public static char[] contarEspacios(char[] entrada){
+    public static int contarEspacios(char[] entrada){
         int espacios=0;
         for (char letra:entrada){
             if (letra == 32){
@@ -31,6 +33,15 @@ public class Main {
             }
 
         }
-        return salida;
+        return espacios;
     }
+
+
+    public static char[] borrarEspacios(char[] entrada){
+        char[] salida = char[entrada.length-contarEspacios(entrada)];
+
+        for(int i=0;i<entrada.length-contarEspacios(entrada);i++);
+
+    }
+
 }
