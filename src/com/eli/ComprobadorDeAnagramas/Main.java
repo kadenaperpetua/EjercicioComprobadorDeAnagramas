@@ -38,20 +38,24 @@ public class Main {
 
         int sumatoria1 = 0;
         int sumatoria2 = 0;
+        int contador1 = 0;
+        int contador2 = 0;
 
         for (char letra:entrada1norm) {
             if (letra != 32) {
-                sumatoria1++;
+                sumatoria1+= letra;
+                contador1++;
             }
         }
 
         for (char letra:entrada1norm){
             if (letra != 32){
-                sumatoria2++;
+                sumatoria2+= letra;
+                contador2++;
             }
         }
 
-        if(sumatoria1==sumatoria2){
+        if(sumatoria1==sumatoria2 && contador1==contador2){
             System.out.println("El texto es un anagrama");
         }else{
             System.out.println("El texto no es un anagrama");
