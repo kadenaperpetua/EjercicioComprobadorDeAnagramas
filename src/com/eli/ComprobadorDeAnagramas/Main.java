@@ -3,13 +3,13 @@ package com.eli.ComprobadorDeAnagramas;
 public class Main {
 
     public static void main(String[] args) {
-	    String textoDeOrigen = "PRO TESTA";
-        String textoPorComprobar ="portaste";
+	    String entrada1 = "PRO TESTA";
+        String entrada2 ="portaste";
         
         //int a= ' ';
         //System.out.println("a = " + a);
 
-        char[] comprobador= normalizar(textoDeOrigen);
+        char[] comprobador= normalizar(entrada1);
 
         for(int i=0;i<comprobador.length;i++) {
             System.out.print(comprobador[i]);
@@ -56,5 +56,39 @@ public class Main {
         }
         return instancias;
     }
+
+    public static void comprobarAnagrama(String entrada1, String entrada2){
+        char[] entrada1norm = normalizar(entrada1);
+        char[] entrada2norm = normalizar(entrada2);
+
+        int sumatoria1 = 0;
+        int sumatoria2 = 0;
+
+        for (char letra:entrada1norm) {
+            if (letra != 32) {
+                sumatoria1++;
+            }
+        }
+
+        for (char letra:entrada1norm){
+            if (letra != 32){
+                sumatoria2++;
+            }
+        }
+
+        if(sumatoria1==sumatoria2){
+            System.out.println("El texto es un anagrama");
+        }else{
+            System.out.println("El texto no es un anagrama");
+        }
+
+
+
+
+
+    }
+
+
+
 
 }
